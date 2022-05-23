@@ -1,3 +1,9 @@
+# Programme : while_making_autimation_headless
+# Description : This method make the automation invisible to the user
+# Date : 23/05/2022
+# Author : Christophe Lagaillarde
+# Version : 1.0
+
 from selenium import webdriver
 
 

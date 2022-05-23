@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/GetMoneyFromHio.iml" filepath="$PROJECT_DIR$/.idea/GetMoneyFromHio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../automatically_change_pfp/.idea/automatically_change_pfp.iml" filepath="$PROJECT_DIR$/../automatically_change_pfp/.idea/automatically_change_pfp.iml" />
     </modules>
   </component>
 </project>
