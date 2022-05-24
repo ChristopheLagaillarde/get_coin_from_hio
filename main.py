@@ -8,7 +8,7 @@ from selenium_tools.while_making_automation_headless import while_making_automat
 from get_coin_from_hio import get_coin_from_hio
 
 
-def main():
+def main() -> None:
     get_coin_from_hio(while_making_automation_headless())
 
 

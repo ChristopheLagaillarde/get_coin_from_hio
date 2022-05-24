@@ -5,11 +5,12 @@
 # Version : 1.0
 
 from selenium_tools.id_exist import id_exist
+from selenium import webdriver
 from time import sleep
 from Credential import Credential
 
 
-def get_coin_from_hio(driver):
+def get_coin_from_hio(driver: webdriver) -> None:
     driver.get("https://hogwarts.io/viewforum.php?f=52")
     while id_exist("username", driver)\
             and id_exist("password", driver)\

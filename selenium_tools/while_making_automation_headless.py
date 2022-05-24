@@ -7,7 +7,7 @@
 from selenium import webdriver
 
 
-def while_making_automation_headless():
+def while_making_automation_headless() -> webdriver:
     options = webdriver.EdgeOptions()
     options.headless = True
     options.add_argument("--window-size=1920,1080")
