@@ -12,14 +12,13 @@ from Credential import Credential
 
 def get_coin_from_hio(driver: webdriver) -> None:
     driver.get("https://hogwarts.io/viewforum.php?f=52")
-    while id_exist("username", driver)\
-            and id_exist("password", driver)\
-            and id_exist("login", driver):
+    while not (id_exist("username", driver) and id_exist("password", driver) and id_exist("login", driver)):
         sleep(1)
     my_login = Credential()
     driver.find_element_by_id("username").send_keys(my_login.get_username())
     driver.find_element_by_id('password').send_keys(my_login.get_password())
     driver.find_element_by_name('login').click()
     del my_login
+    sleep(20)
     driver.execute_script("document.getElementsByClassName(\"money money--sickles\")[1].click();")
     driver.close()
