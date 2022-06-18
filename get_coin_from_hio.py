@@ -7,8 +7,8 @@
 from selenium import webdriver
 from time import sleep
 from Credential import Credential
-from selenium_tools.id_exist import  id_exist
-from selenium_tools.name_exist import  name_exist
+from selenium_tools.id_exist import id_exist
+from selenium_tools.name_exist import name_exist
 
 
 def get_coin_from_hio(driver: webdriver) -> None:
